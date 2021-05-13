@@ -1,24 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from './Header';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import Body from './components/Body';
+import Footer from './Footer';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+
+      <div className="jumbotron jumbotron-fluid bg-info text-white text-center">
+        <Header />
+        
+      </div>
+      <Body />
+      <Footer />
+    </>
   );
 }
 
